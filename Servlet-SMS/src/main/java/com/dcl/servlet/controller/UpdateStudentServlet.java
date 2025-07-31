@@ -22,7 +22,7 @@ public class UpdateStudentServlet extends GenericServlet {
 
 	@Override
 	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-		String title = req.getParameter("studentName");
+		String title = req.getParameter("searchStudent");
 		String dept = req.getParameter("department").toUpperCase();
 		Department d = Department.valueOf(dept);
 		
